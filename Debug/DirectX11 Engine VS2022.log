@@ -1,0 +1,12 @@
+﻿  compilation object save succeeded; see C:\Users\2230164\Documents\DirectX11 Engine VS2022\Debug\pixelshader.cso
+  Engine.cpp
+  Graphics.cpp
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(106,19): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(107,20): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+  Shader.cpp
+  RenderWindow.cpp
+  Source.cpp
+  WindowContainer.cpp
+  コードを生成中...
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\WindowContainer.cpp(168): warning C4715: 'WindowContainer::WindowProc': 値を返さないコントロール パスがあります。
+  DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\DirectX11 Engine VS2022\Debug\DirectX11 Engine VS2022.exe

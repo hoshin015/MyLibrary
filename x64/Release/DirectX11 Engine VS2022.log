@@ -1,0 +1,15 @@
+﻿  compilation object save succeeded; see C:\Users\2230164\Documents\DirectX11 Engine VS2022\x64\Release\pixelshader.cso
+  Engine.cpp
+  Graphics.cpp
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(106,19): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(107,20): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+  Shader.cpp
+  RenderWindow.cpp
+  Source.cpp
+  WindowContainer.cpp
+  コード生成しています。
+  24 of 652 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
+    8 functions were new in current compilation
+    12 functions had inline decision re-evaluated but remain unchanged
+  コード生成が終了しました。
+  DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\DirectX11 Engine VS2022\x64\Release\DirectX11 Engine VS2022.exe

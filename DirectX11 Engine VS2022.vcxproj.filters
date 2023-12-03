@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Keyboard">
+      <UniqueIdentifier>{7ac99cb0-d222-42c0-965e-dfa70741ed56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header\Keyboard">
+      <UniqueIdentifier>{d1a52f89-929d-4789-a84e-ab8c6fda7b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Mouse">
+      <UniqueIdentifier>{2b82235b-aefd-4102-8847-08b7ce40bf3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mouse">
+      <UniqueIdentifier>{4e990e39-28e0-4885-8256-06aae38b6077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Graphics">
+      <UniqueIdentifier>{443fb17e-ccee-4127-8a0f-2f59aec602f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics">
+      <UniqueIdentifier>{d870ed0a-bd46-407d-b4f6-2e92a6506cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StringConverter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorLogger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowContainer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard\KeyboardEvent.cpp">
+      <Filter>Source\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard\KeyboardClass.cpp">
+      <Filter>Source\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse\MouseClass.cpp">
+      <Filter>Source\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse\MouseEvent.cpp">
+      <Filter>Source\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AdapterReader.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StringConverter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorLogger.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderWindow.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowContainer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\KeyboardEvent.h">
+      <Filter>Header\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\KeyboardClass.h">
+      <Filter>Header\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse\MouseClass.h">
+      <Filter>Header\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse\MouseEvent.h">
+      <Filter>Header\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AdapterReader.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Vertex.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shader.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\VertexBuffer.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\IndexBuffer.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ConstantBufferTypes.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ConstantBuffer.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="vertexshader.hlsl">
+      <Filter>Resource</Filter>
+    </FxCompile>
+    <FxCompile Include="pixelshader.hlsl">
+      <Filter>Resource</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

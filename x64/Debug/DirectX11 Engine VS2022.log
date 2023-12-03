@@ -1,0 +1,26 @@
+﻿  Graphics.cpp
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(211,19): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(212,20): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): warning C4267: '初期化中': 'size_t' から 'UINT' に変換しました。データが失われているかもしれません。
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\VertexBuffer.h(48): message : コンパイル対象の関数 テンプレート インスタンス化 'std::unique_ptr<UINT,std::default_delete<UINT>> std::make_unique<UINT,size_t,0>(size_t &&)' のリファレンスを確認してください
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\VertexBuffer.h(46,1): message : クラス テンプレート メンバー関数 'HRESULT VertexBuffer<Vertex>::Initialize(ID3D11Device *,T *,UINT)' のコンパイル中
+          with
+          [
+              T=Vertex
+          ]
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(321,13): message : コンパイル対象の関数 テンプレート インスタンス化 'HRESULT VertexBuffer<Vertex>::Initialize(ID3D11Device *,T *,UINT)' のリファレンスを確認してください
+          with
+          [
+              T=Vertex
+          ]
+C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.h(32,23): message : コンパイル対象の クラス テンプレート インスタンス化 'VertexBuffer<Vertex>' のリファレンスを確認してください
+  LINK : 前回のインクリメンタル リンクで C:\Users\2230164\Documents\DirectX11 Engine VS2022\x64\Debug\DirectX11 Engine VS2022.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+DirectXTK.lib(SpriteBatch.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(SpriteBatch.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(SpriteFont.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(SpriteFont.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(WICTextureLoader.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(WICTextureLoader.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(BufferHelpers.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(BufferHelpers.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(CommonStates.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(CommonStates.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(VertexTypes.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(VertexTypes.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(pch.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(pch.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(BinaryReader.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(BinaryReader.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+  DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\DirectX11 Engine VS2022\x64\Debug\DirectX11 Engine VS2022.exe
