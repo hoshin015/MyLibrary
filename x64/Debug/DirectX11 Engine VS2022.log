@@ -1,14 +1,4 @@
-﻿  Engine.cpp
-  Graphics.cpp
-C:\Users\2230164\Documents\MyLibrary\Graphics\Graphics.cpp(187,19): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
-C:\Users\2230164\Documents\MyLibrary\Graphics\Graphics.cpp(188,20): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
-  Shader.cpp
-  Sprite.cpp
-C:\Users\2230164\Documents\MyLibrary\Graphics\Sprite.cpp(62,99): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\2230164\Documents\MyLibrary\Graphics\Sprite.cpp(62,78): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
-  RenderWindow.cpp
-  Source.cpp
-  WindowContainer.cpp
-  コードを生成中...
-C:\Users\2230164\Documents\MyLibrary\WindowContainer.cpp(168): warning C4715: 'WindowContainer::WindowProc': 値を返さないコントロール パスがあります。
+﻿  Font.cpp
+C:\Users\2230164\Documents\MyLibrary\Graphics\Font.cpp(195,107): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\2230164\Documents\MyLibrary\Graphics\Font.cpp(195,86): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
   DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\MyLibrary\x64\Debug\DirectX11 Engine VS2022.exe

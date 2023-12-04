@@ -31,7 +31,9 @@ void Graphics::RenderFrame()
 	// シェーダーリソースの配列の設定
 	this->deviceContext->PSSetShaderResources(0, 1, this->myTexture.GetAddressOf());
 
+
 	sprites[0]->render(this->deviceContext.Get(), 10, 10, 200, 200, 1, 1, 1, 1, 0);
+	fonts[0]->render(this->device.Get(), this->deviceContext.Get(), 400, 400, 200, 200, 1, 1, 1, 1, 0);
 
 	// 文字描画
 	spriteBatch->Begin();
@@ -232,6 +234,7 @@ bool Graphics::InitializeDirectX(HWND hwnd, int width, int height)
 	}
 
 	sprites[0] = new Sprite(this->device.Get(), L"Data/Texture/piano.png");
+	fonts[0] = new Font(this->device.Get(), this->deviceContext.Get());
 
 	return true;
 }
