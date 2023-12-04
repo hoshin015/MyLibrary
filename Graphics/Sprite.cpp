@@ -35,7 +35,7 @@ Sprite::Sprite(ID3D11Device* device, const wchar_t* filename)
 	}
 
 	// 頂点シェーダーオブジェクトの生成・入力レイアウトオブジェクトの生成
-	const char* csoName{ "./x64/Debug/spriteVs.cso" };
+	const char* csoName{ "./Shader/SpriteVs.cso" };
 
 	D3D11_INPUT_ELEMENT_DESC inputElementDesc[]
 	{
@@ -48,7 +48,7 @@ Sprite::Sprite(ID3D11Device* device, const wchar_t* filename)
 	shader.createVsFromCso(device, csoName, &vertexShader, &inputLayout, inputElementDesc, _countof(inputElementDesc));
 
 	// ピクセルシェーダーオブジェクトの生成
-	csoName = { "./x64/Debug/spritePs.cso" };
+	csoName = { "./Shader/SpritePs.cso" };
 
 	shader.createPsFromCso(device, csoName, &pixelShader);
 

@@ -1,15 +1,17 @@
-﻿  compilation object save succeeded; see C:\Users\2230164\Documents\DirectX11 Engine VS2022\x64\Release\pixelshader.cso
-  Engine.cpp
-  Graphics.cpp
-C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(106,19): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
-C:\Users\2230164\Documents\DirectX11 Engine VS2022\Graphics\Graphics.cpp(107,20): warning C4244: '=': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
-  Shader.cpp
-  RenderWindow.cpp
-  Source.cpp
-  WindowContainer.cpp
+﻿  Sprite.cpp
+C:\Users\2230164\Documents\MyLibrary\Graphics\Sprite.cpp(62,99): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\2230164\Documents\MyLibrary\Graphics\Sprite.cpp(62,78): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
   コード生成しています。
-  24 of 652 functions ( 3.7%) were compiled, the rest were copied from previous compilation.
-    8 functions were new in current compilation
-    12 functions had inline decision re-evaluated but remain unchanged
+  3 of 865 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
-  DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\DirectX11 Engine VS2022\x64\Release\DirectX11 Engine VS2022.exe
+DirectXTK.lib(SpriteBatch.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(SpriteBatch.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(SpriteFont.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(SpriteFont.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(WICTextureLoader.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(WICTextureLoader.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(BufferHelpers.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(BufferHelpers.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(CommonStates.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(CommonStates.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(VertexTypes.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(VertexTypes.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(pch.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(pch.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+DirectXTK.lib(BinaryReader.obj) : warning LNK4099: PDB '' が 'DirectXTK.lib(BinaryReader.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+  DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\MyLibrary\x64\Release\DirectX11 Engine VS2022.exe

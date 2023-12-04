@@ -21,7 +21,7 @@ HRESULT Texture::loadTextureFromFile(ID3D11Device* device, const wchar_t* filena
 		{
 			ErrorLogger::Log(hr, "Failed to create wic texture from file.");
 		}
-		resources.insert(make_pair(filename, *shaderResourceView));
+		resources.insert(make_pair(filename, *shaderResourceView));	// map‚É‚¢‚ê‚é
 	}
 
 	ComPtr<ID3D11Texture2D> texture2d;
