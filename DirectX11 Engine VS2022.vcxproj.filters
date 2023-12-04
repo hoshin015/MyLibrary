@@ -72,6 +72,12 @@
     <ClCompile Include="Graphics\Shader.cpp">
       <Filter>Source\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Graphics\Sprite.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StringConverter.h">
@@ -125,6 +131,12 @@
     <ClInclude Include="Graphics\ConstantBuffer.h">
       <Filter>Header\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics\Sprite.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.h">
+      <Filter>Header\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="vertexshader.hlsl">
@@ -133,5 +145,16 @@
     <FxCompile Include="pixelshader.hlsl">
       <Filter>Resource</Filter>
     </FxCompile>
+    <FxCompile Include="SpriteVs.hlsl">
+      <Filter>Resource</Filter>
+    </FxCompile>
+    <FxCompile Include="SpritePs.hlsl">
+      <Filter>Resource</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprite.hlsli">
+      <Filter>Resource</Filter>
+    </None>
   </ItemGroup>
 </Project>

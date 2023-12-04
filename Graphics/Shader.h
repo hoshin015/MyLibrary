@@ -1,30 +1,11 @@
 #pragma once
-#include "../ErrorLogger.h"
-#pragma comment(lib, "D3DCompiler.lib")
+#include <wrl.h>
 #include <d3d11.h>
-#include <wrl/client.h>
-#include <d3dcompiler.h>
 
-class VertexShader
+class Shader
 {
 public:
-	bool Initialize(Microsoft::WRL::ComPtr<ID3D11Device>& device, std::wstring shaderpath, D3D11_INPUT_ELEMENT_DESC* layoutDesc, UINT numElements);
-	ID3D11VertexShader* GetShader();
-	ID3D10Blob* GetBuffer();
-	ID3D11InputLayout* GetInputLayout();
-private:
-	Microsoft::WRL::ComPtr<ID3D11VertexShader> shader = nullptr;
-	Microsoft::WRL::ComPtr<ID3D10Blob> shader_buffer = nullptr;
-	Microsoft::WRL::ComPtr<ID3D11InputLayout> inputLayout;
-};
+	HRESULT createVsFromCso(ID3D11Device* device, const char* csoName, ID3D11VertexShader** vertexShader, ID3D11InputLayout** inputLayout, D3D11_INPUT_ELEMENT_DESC* inputElementDesc, UINT numElements);
 
-class PixelShader
-{
-public:
-	bool Initialize(Microsoft::WRL::ComPtr<ID3D11Device>& device, std::wstring shaderpath);
-	ID3D11PixelShader* GetShader();
-	ID3D10Blob* GetBuffer();
-private:
-	Microsoft::WRL::ComPtr<ID3D11PixelShader> shader = nullptr;
-	Microsoft::WRL::ComPtr<ID3D10Blob> shader_buffer = nullptr;
+	HRESULT createPsFromCso(ID3D11Device* device, const char* csoName, ID3D11PixelShader** pixelShader);
 };

@@ -10,6 +10,8 @@
 #include "ConstantBufferTypes.h"
 #include "ConstantBuffer.h"
 
+#include "Sprite.h"
+
 class Graphics
 {
 public:
@@ -25,12 +27,12 @@ private:
 	Microsoft::WRL::ComPtr<IDXGISwapChain> swapchain;
 	Microsoft::WRL::ComPtr<ID3D11RenderTargetView> renderTargetView;
 
-	VertexShader vertexshader;
-	PixelShader pixelshader;
-	ConstantBuffer<CB_VS_vertexshader> constantBuffer;
+	//VertexShader vertexshader;
+	//PixelShader pixelshader;
+	//ConstantBuffer<CB_VS_vertexshader> constantBuffer;
 
-	VertexBuffer<Vertex> vertexBuffer;
-	IndexBuffer indicesBuffer;
+	//VertexBuffer<Vertex> vertexBuffer;
+	//IndexBuffer indicesBuffer;
 
 	Microsoft::WRL::ComPtr<ID3D11DepthStencilView> depthStencilView;
 	Microsoft::WRL::ComPtr<ID3D11Texture2D> depthStencilBuffer;
@@ -43,4 +45,6 @@ private:
 
 	Microsoft::WRL::ComPtr<ID3D11SamplerState> samplerState;
 	Microsoft::WRL::ComPtr<ID3D11ShaderResourceView> myTexture;
+
+	Sprite* sprites[8];
 };
