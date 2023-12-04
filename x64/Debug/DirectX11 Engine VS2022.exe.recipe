@@ -7,16 +7,10 @@
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\2230164\Documents\MyLibrary\x64\Debug\pixelshader.cso</FullPath>
+      <FullPath>C:\Users\2230164\Documents\MyLibrary\Data\Shader\SpritePs.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\2230164\Documents\MyLibrary\x64\Debug\SpritePs.cso</FullPath>
-    </ContentFile>
-    <ContentFile>
-      <FullPath>C:\Users\2230164\Documents\MyLibrary\x64\Debug\SpriteVs.cso</FullPath>
-    </ContentFile>
-    <ContentFile>
-      <FullPath>C:\Users\2230164\Documents\MyLibrary\x64\Debug\vertexshader.cso</FullPath>
+      <FullPath>C:\Users\2230164\Documents\MyLibrary\Data\Shader\SpriteVs.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

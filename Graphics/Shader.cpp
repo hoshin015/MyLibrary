@@ -11,7 +11,6 @@ HRESULT Shader::createVsFromCso(ID3D11Device* device, const char* csoName, ID3D1
 	{
 		ErrorLogger::Log("CSO File not found");
 	}
-	//_ASSERT_EXPR_A(fp, "CSO File not found");
 
 	fseek(fp, 0, SEEK_END);
 	long csoSz{ ftell(fp) };
@@ -27,7 +26,6 @@ HRESULT Shader::createVsFromCso(ID3D11Device* device, const char* csoName, ID3D1
 	{
 		ErrorLogger::Log(hr, "Failed to create vertex shader.");
 	}
-	//_ASSERT_EXPR(SUCCEEDED(hr), hr_trace(hr));
 
 	if (inputLayout)
 	{
@@ -36,7 +34,6 @@ HRESULT Shader::createVsFromCso(ID3D11Device* device, const char* csoName, ID3D1
 		{
 			ErrorLogger::Log(hr, "Failed to create input layout.");
 		}
-		//_ASSERT_EXPR(SUCCEEDED(hr), hr_trace(hr));
 	}
 
 	return hr;
@@ -52,7 +49,6 @@ HRESULT Shader::createPsFromCso(ID3D11Device* device, const char* csoName, ID3D1
 	{
 		ErrorLogger::Log("CSO File not found");
 	}
-	//_ASSERT_EXPR_A(fp, "CSO File not found");
 
 	fseek(fp, 0, SEEK_END);
 	long csoSz = { ftell(fp) };
@@ -68,7 +64,6 @@ HRESULT Shader::createPsFromCso(ID3D11Device* device, const char* csoName, ID3D1
 	{
 		ErrorLogger::Log(hr, "Failed to create pixel shader.");
 	}
-	//_ASSERT_EXPR(SUCCEEDED(hr), hr_trace(hr));
 
 	return hr;
 }

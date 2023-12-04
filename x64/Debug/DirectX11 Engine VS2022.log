@@ -1,4 +1,6 @@
-﻿  Sprite.cpp
+﻿  compilation code save succeeded; see C:\Users\2230164\Documents\MyLibrary\Data\Shader\SpriteVs.cod
+  compilation object save succeeded; see C:\Users\2230164\Documents\MyLibrary\Data\Shader\SpriteVs.cso
+  Sprite.cpp
 C:\Users\2230164\Documents\MyLibrary\Graphics\Sprite.cpp(62,99): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\2230164\Documents\MyLibrary\Graphics\Sprite.cpp(62,78): warning C4244: '引数': 'UINT' から 'float' への変換です。データが失われる可能性があります。
   DirectX11 Engine VS2022.vcxproj -> C:\Users\2230164\Documents\MyLibrary\x64\Debug\DirectX11 Engine VS2022.exe

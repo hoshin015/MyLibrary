@@ -22,40 +22,14 @@ void Graphics::RenderFrame()
 	this->deviceContext->ClearDepthStencilView(this->depthStencilView.Get(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);	// depthStencilViewのクリア
 
 	///////// ViewをクリアしてからPresentまでにすべての描画を行う /////////
-	
-	// inputLayoutの設定
-	//this->deviceContext->IASetInputLayout(this->vertexshader.GetInputLayout());
-	
 	this->deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY::D3D10_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 	this->deviceContext->RSSetState(this->rasterizerState.Get());					// rasterizerStateの設定
 	this->deviceContext->OMSetDepthStencilState(this->depthStencilState.Get(), 0);	// depthStencilStateの設定
 	this->deviceContext->PSSetSamplers(0, 1, this->samplerState.GetAddressOf());
 
-	//// 頂点シェーダーの設定
-	//this->deviceContext->VSSetShader(vertexshader.GetShader(), NULL, 0);
-	//// ピクセルシェーダーの設定
-	//this->deviceContext->PSSetShader(pixelshader.GetShader(), NULL, 0);
-
 	// シェーダーリソースの配列の設定
 	this->deviceContext->PSSetShaderResources(0, 1, this->myTexture.GetAddressOf());
-	
-	// 頂点バッファの配列を入力アセンブラーステージにバインドする
-	//UINT offset = 0;
-
-	//// constantバッファの更新
-	//static float yOff = 0.5f;
-	//yOff -= 0.01f;
-	//constantBuffer.data.xOffset = 0.0f;
-	//constantBuffer.data.yOffset = sinf(yOff);
-	//if (!constantBuffer.ApplyChanges())
-	//	return;
-	//this->deviceContext->VSSetConstantBuffers(0, 1, constantBuffer.GetAddressOf());	// constantBufferのバインド
-
-	// 四角形
-	//this->deviceContext->IASetVertexBuffers(0, 1, vertexBuffer.GetAddressOf(), vertexBuffer.StridePtr(), &offset);
-	//this->deviceContext->IASetIndexBuffer(indicesBuffer.Get(), DXGI_FORMAT_R32_UINT, 0);
-	//this->deviceContext->DrawIndexed(indicesBuffer.BufferSize(), 0, 0);
 
 	sprites[0]->render(this->deviceContext.Get(), 10, 10, 200, 200, 1, 1, 1, 1, 0);
 
@@ -264,89 +238,14 @@ bool Graphics::InitializeDirectX(HWND hwnd, int width, int height)
 
 bool Graphics::InitializeShaders()
 {
-	// modeによって読み込むshaderのパスを変更する
-//	std::wstring shaderfolder;
-//#pragma region DetermineShaderPath
-//	if (IsDebuggerPresent() == TRUE)
-//	{
-//#ifdef _DEBUG // Degbu Mode
-//
-//	#ifdef _WIN64 // x64
-//		shaderfolder = L"./x64/Debug/";
-//	#else // x86(Win32)
-//		shaderfolder = L"./Debug/";
-//	#endif
-//
-//#else // Release Mode
-//
-//	#ifdef _WIN64 // x64
-//			shaderfolder = L"./x64/Release/";
-//	#else // x86(Win32)
-//			shaderfolder = L"./Release/";
-//#endif
-//#endif
-//	}
-//#pragma endregion
-//
-//	// InputLayoutの情報作成
-//	D3D11_INPUT_ELEMENT_DESC layout[] =
-//	{
-//		{ "POSITION", 0, DXGI_FORMAT::DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_CLASSIFICATION::D3D11_INPUT_PER_VERTEX_DATA, 0 },
-//		{ "TEXCOORD", 0, DXGI_FORMAT::DXGI_FORMAT_R32G32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_CLASSIFICATION::D3D11_INPUT_PER_VERTEX_DATA, 0 },
-//	};
-//
-//	UINT numElements = ARRAYSIZE(layout);	
-//
-//	// verteshaderオブジェクトとinputLayoutオブジェクトの作成
-//	if (!vertexshader.Initialize(this->device, shaderfolder +  L"vertexshader.cso", layout, numElements))
-//		return false;
-//
-//	// pixelshaderオブジェクトの作成
-//	if (!pixelshader.Initialize(this->device, shaderfolder + L"pixelshader.cso"))
-//		return false;
+	
 
 	return true;
 }
 
 bool Graphics::InitializeScene()
 {
-	//-------- < 頂点バッファの作成　> --------//
-
-	// 頂点配列
-	//Vertex v[] =
-	//{
-	//	Vertex(-0.5f, -0.5f, 0.0f, 0.0f, 1.0f),		// Bottom Left	- [0]
-	//	Vertex(-0.5f,  0.5f, 0.0f, 0.0f, 0.0f),		// Top Left		- [1]
-	//	Vertex( 0.5f,  0.5f, 1.0f, 1.0f, 0.0f),		// Top Right	- [2]
-	//	Vertex( 0.5f, -0.5f, 1.0f, 1.0f, 1.0f),		// Bottom Right	- [3]
-	//};
-
-	//// バッファの作成
-	//HRESULT hr = this->vertexBuffer.Initialize(this->device.Get(), v, ARRAYSIZE(v));
-	//if (FAILED(hr))
-	//{
-	//	ErrorLogger::Log(hr, "Failed to create vertex buffer.");
-	//	return false;
-	//}
-
-	/////////// テクスチャ読み込み /////////
-
-	//// ID3D11Resource と　ID3D11ShaderResourceView を生成する
-	//// ID3D11Resourceのポインタにはnullptrを渡しているため作られない
-	//hr = DirectX::CreateWICTextureFromFile(this->device.Get(), L"Data/Texture/piano.png", nullptr, myTexture.GetAddressOf());
-	//if (FAILED(hr))
-	//{
-	//	ErrorLogger::Log(hr, "Failed to create wic texture from file.");
-	//	return false;
-	//}
-
-	//-------- < constantバッファの作成　> --------//
-	/*hr = this->constantBuffer.Initialize(device.Get(), this->deviceContext.Get());
-	if (FAILED(hr))
-	{
-		ErrorLogger::Log(hr, "Failed to initialize constant buffer.");
-		return false;
-	}*/
+	
 
 	return true;
 }
