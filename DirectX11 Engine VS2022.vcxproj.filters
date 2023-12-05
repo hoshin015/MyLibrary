@@ -5,155 +5,179 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source\Keyboard">
-      <UniqueIdentifier>{7ac99cb0-d222-42c0-965e-dfa70741ed56}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Header\Keyboard">
-      <UniqueIdentifier>{d1a52f89-929d-4789-a84e-ab8c6fda7b15}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header\Mouse">
-      <UniqueIdentifier>{2b82235b-aefd-4102-8847-08b7ce40bf3e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Mouse">
-      <UniqueIdentifier>{4e990e39-28e0-4885-8256-06aae38b6077}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header\Graphics">
-      <UniqueIdentifier>{443fb17e-ccee-4127-8a0f-2f59aec602f4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\Graphics">
-      <UniqueIdentifier>{d870ed0a-bd46-407d-b4f6-2e92a6506cbd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="HoshinLib">
+      <UniqueIdentifier>{0d0cf105-8720-42c4-810e-745f6674beb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Header">
+      <UniqueIdentifier>{08f4610a-d116-4905-a8c7-4bd2e7b4f652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Source">
+      <UniqueIdentifier>{6762e8a5-0e51-4b96-93d4-4c5da1aa9f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Source\Graphics">
+      <UniqueIdentifier>{d870ed0a-bd46-407d-b4f6-2e92a6506cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Source\Keyboard">
+      <UniqueIdentifier>{7ac99cb0-d222-42c0-965e-dfa70741ed56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Source\Mouse">
+      <UniqueIdentifier>{4e990e39-28e0-4885-8256-06aae38b6077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Header\Graphics">
+      <UniqueIdentifier>{443fb17e-ccee-4127-8a0f-2f59aec602f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Header\Keyboard">
+      <UniqueIdentifier>{d1a52f89-929d-4789-a84e-ab8c6fda7b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HoshinLib\Header\Mouse">
+      <UniqueIdentifier>{2b82235b-aefd-4102-8847-08b7ce40bf3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="HoshinLib\Keyboard\KeyboardEvent.cpp">
+      <Filter>HoshinLib\Source\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Keyboard\KeyboardClass.cpp">
+      <Filter>HoshinLib\Source\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Mouse\MouseClass.cpp">
+      <Filter>HoshinLib\Source\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Mouse\MouseEvent.cpp">
+      <Filter>HoshinLib\Source\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Graphics\Graphics.cpp">
+      <Filter>HoshinLib\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Graphics\AdapterReader.cpp">
+      <Filter>HoshinLib\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Graphics\Shader.cpp">
+      <Filter>HoshinLib\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Graphics\Sprite.cpp">
+      <Filter>HoshinLib\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Graphics\Texture.cpp">
+      <Filter>HoshinLib\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Graphics\Font.cpp">
+      <Filter>HoshinLib\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Engine.cpp">
+      <Filter>HoshinLib\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\ErrorLogger.cpp">
+      <Filter>HoshinLib\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\RenderWindow.cpp">
+      <Filter>HoshinLib\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\StringConverter.cpp">
+      <Filter>HoshinLib\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\WindowContainer.cpp">
+      <Filter>HoshinLib\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HoshinLib\Source.cpp">
+      <Filter>HoshinLib\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneManager.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="StringConverter.cpp">
+    <ClCompile Include="Source\SceneTitle.cpp">
       <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="ErrorLogger.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="RenderWindow.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowContainer.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard\KeyboardEvent.cpp">
-      <Filter>Source\Keyboard</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard\KeyboardClass.cpp">
-      <Filter>Source\Keyboard</Filter>
-    </ClCompile>
-    <ClCompile Include="Mouse\MouseClass.cpp">
-      <Filter>Source\Mouse</Filter>
-    </ClCompile>
-    <ClCompile Include="Mouse\MouseEvent.cpp">
-      <Filter>Source\Mouse</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Graphics.cpp">
-      <Filter>Source\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\AdapterReader.cpp">
-      <Filter>Source\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Shader.cpp">
-      <Filter>Source\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Sprite.cpp">
-      <Filter>Source\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Texture.cpp">
-      <Filter>Source\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\Font.cpp">
-      <Filter>Source\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StringConverter.h">
+    <ClInclude Include="HoshinLib\Keyboard\KeyboardEvent.h">
+      <Filter>HoshinLib\Header\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Keyboard\KeyboardClass.h">
+      <Filter>HoshinLib\Header\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Mouse\MouseClass.h">
+      <Filter>HoshinLib\Header\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Mouse\MouseEvent.h">
+      <Filter>HoshinLib\Header\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\Graphics.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\AdapterReader.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\Vertex.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\Shader.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\VertexBuffer.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\IndexBuffer.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\ConstantBufferTypes.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\ConstantBuffer.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\Sprite.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\Texture.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Graphics\Font.h">
+      <Filter>HoshinLib\Header\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\Engine.h">
+      <Filter>HoshinLib\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\ErrorLogger.h">
+      <Filter>HoshinLib\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\RenderWindow.h">
+      <Filter>HoshinLib\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\StringConverter.h">
+      <Filter>HoshinLib\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HoshinLib\WindowContainer.h">
+      <Filter>HoshinLib\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneManager.h">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="ErrorLogger.h">
+    <ClInclude Include="Source\SceneTitle.h">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="RenderWindow.h">
+    <ClInclude Include="Source\Scene.h">
       <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowContainer.h">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard\KeyboardEvent.h">
-      <Filter>Header\Keyboard</Filter>
-    </ClInclude>
-    <ClInclude Include="Keyboard\KeyboardClass.h">
-      <Filter>Header\Keyboard</Filter>
-    </ClInclude>
-    <ClInclude Include="Mouse\MouseClass.h">
-      <Filter>Header\Mouse</Filter>
-    </ClInclude>
-    <ClInclude Include="Mouse\MouseEvent.h">
-      <Filter>Header\Mouse</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Graphics.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\AdapterReader.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Vertex.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Shader.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\VertexBuffer.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\IndexBuffer.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\ConstantBufferTypes.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\ConstantBuffer.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Sprite.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Texture.h">
-      <Filter>Header\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics\Font.h">
-      <Filter>Header\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="SpriteVs.hlsl">
+    <FxCompile Include="HoshinLib\SpriteVs.hlsl">
       <Filter>Resource</Filter>
     </FxCompile>
-    <FxCompile Include="SpritePs.hlsl">
+    <FxCompile Include="HoshinLib\SpritePs.hlsl">
       <Filter>Resource</Filter>
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Sprite.hlsli">
+    <None Include="HoshinLib\Sprite.hlsli">
       <Filter>Resource</Filter>
     </None>
   </ItemGroup>
